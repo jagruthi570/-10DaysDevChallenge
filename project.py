@@ -1,0 +1,98 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyOnscr6nH8dPtkUQmEsTAnH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jagruthi570/-10DaysDevChallenge/blob/main/project.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uhrdjRWNH-Gi",
+        "outputId": "1334fbc9-5600-45f3-c231-122ddb66878e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Simple Python Calculator\n",
+            "1. Add\n",
+            "2. Subtract\n",
+            "3. Multiply\n",
+            "4. Divide\n"
+          ]
+        }
+      ],
+      "source": [
+        "def add(a, b):\n",
+        "    return a + b\n",
+        "\n",
+        "def subtract(a, b):\n",
+        "    return a - b\n",
+        "\n",
+        "def multiply(a, b):\n",
+        "    return a * b\n",
+        "\n",
+        "def divide(a, b):\n",
+        "    if b == 0:\n",
+        "        return \"Error! Division by zero.\"\n",
+        "    return a / b\n",
+        "\n",
+        "\n",
+        "def calculator():\n",
+        "    print(\"Simple Python Calculator\")\n",
+        "    print(\"1. Add\")\n",
+        "    print(\"2. Subtract\")\n",
+        "    print(\"3. Multiply\")\n",
+        "    print(\"4. Divide\")\n",
+        "\n",
+        "    choice = input(\"Choose an operation (1/2/3/4): \")\n",
+        "\n",
+        "    if choice in ['1', '2', '3', '4']:\n",
+        "        num1 = float(input(\"Enter first number: \"))\n",
+        "        num2 = float(input(\"Enter second number: \"))\n",
+        "\n",
+        "        if choice == '1':\n",
+        "            print(\"Result:\", add(num1, num2))\n",
+        "        elif choice == '2':\n",
+        "            print(\"Result:\", subtract(num1, num2))\n",
+        "        elif choice == '3':\n",
+        "            print(\"Result:\", multiply(num1, num2))\n",
+        "        elif choice == '4':\n",
+        "            print(\"Result:\", divide(num1, num2))\n",
+        "    else:\n",
+        "        print(\"Invalid choice\")\n",
+        "\n",
+        "\n",
+        "calculator()\n"
+      ]
+    }
+  ]
+}
